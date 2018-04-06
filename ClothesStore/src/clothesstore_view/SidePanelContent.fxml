@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="235.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clothesstore_controller.SidePanelContentController">
+   <children>
+      <ImageView fitHeight="158.0" fitWidth="235.0" pickOnBounds="true">
+         <image>
+            <Image url="@img/logo.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutY="158.0" prefHeight="541.0" prefWidth="52.0" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+      <VBox fx:id="list_btn" layoutY="158.0" prefHeight="311.0" prefWidth="235.0">
+         <children>
+            <JFXButton fx:id="btnTongQuan" alignment="BASELINE_LEFT" graphicTextGap="60.0" onAction="#changeTab" prefHeight="43.0" prefWidth="235.0" ripplerFill="#1451d9" text="Tong Quan">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/dashboard.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnDonHang" alignment="BASELINE_LEFT" graphicTextGap="60.0" onAction="#changeTab" prefHeight="43.0" prefWidth="235.0" ripplerFill="#1451d9" text="Don Hang">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/cart.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnHangHoa" alignment="BASELINE_LEFT" graphicTextGap="60.0" onAction="#changeTab" prefHeight="43.0" prefWidth="235.0" ripplerFill="#1451d9" text="Hang Hoa">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/hanghoa.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnNhapKho" alignment="BASELINE_LEFT" graphicTextGap="60.0" onAction="#changeTab" prefHeight="43.0" prefWidth="235.0" ripplerFill="#1451d9" text="Nhap Kho">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/nhapkho.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnTonKho" alignment="BASELINE_LEFT" graphicTextGap="60.0" onAction="#changeTab" prefHeight="43.0" prefWidth="235.0" ripplerFill="#1451d9" text="Ton Kho">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/tonkho.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnLoiNhuan" alignment="BASELINE_LEFT" graphicTextGap="60.0" onAction="#changeTab" prefHeight="43.0" prefWidth="235.0" ripplerFill="#1451d9" text="Loi Nhuan">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/loinhuan.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnBieuDo" alignment="BASELINE_LEFT" graphicTextGap="60.0" onAction="#changeTab" prefHeight="43.0" prefWidth="235.0" ripplerFill="#1451d9" text="Bieu Do">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/chart.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
